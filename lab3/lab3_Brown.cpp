@@ -97,5 +97,42 @@ int main(){
     cout<<"logical comparison 3 = "<<logicalcomp3<<endl;
     cout<<"logical comparison 4 = "<<logicalcomp4<<endl;
 
+    cout<<"\n----- Lab assignment 3, numerical variables -----"<<endl;
+    int a = 0;
+    int b = 0;
+
+    cout<<"\nEnter the first number (a): "<<endl;
+    cin>>a;
+    cout<<"Enter the second number (b)"<<endl;
+    cin>>b;
+
+    cout<<"\nArithmetic Operations:"<<endl;
+    cout<<"a + b = "<<a + b<<endl;
+    cout<<"a - b = "<<a - b<<endl;
+    cout<<"a * b = "<<a * b<<endl;
+    cout<<"a / b = "<<a / b<<endl;
+    cout<<"a % b = "<<a % b<<endl;
+
+    cout<<"\nAssignment Operations:"<<endl;
+    a += 10;
+    b -= 5;
+    cout<<"a = "<<a<<endl;
+    cout<<"b = "<<b<<endl;
+
+    cout<<"\nBoolean Operations:"<<endl;
+    bool check_ab = a > b;
+    bool check_ab2 = a == b;
+    bool check_ab3 = a != b;
+
+    bool ablogic = a > 0 && b > 0;
+    bool ablogic2 = a < 0 || b < 0;
+    bool ablogic3 = !check_ab;
+
+    cout<<"Is a greater than b? "<<check_ab<<endl;
+    cout<<"Is a equal to b? "<<check_ab2<<endl;
+    cout<<"Is a not equal to b? "<<check_ab3<<endl;
+    cout<<"Are both a and b positive? "<<ablogic<<endl;
+    cout<<"Is either a or b negative? "<<ablogic2<<endl;
+    cout<<"Is a not greater than b? "<<ablogic3<<endl;
     return 0;
 }
