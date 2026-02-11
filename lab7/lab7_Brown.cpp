@@ -69,7 +69,38 @@ int main(){
     int x = 5;
     cout<<"The number is "<<(x % 2 == 0 ? "Even" : "Odd")<<endl;
 
-        
+    cout<<"\nDescription lab exercise 1: nested conditional statement";
+    // Prompt the user to enter their car budget.
+    int budget;
+    cout<<"\nEnter car budget: "<<endl;
+    cin>>budget;
+
+    // Classify the car category according to the Car Price column.
+    if(budget < 0){
+        cout<<"Invalid budget!"<<endl;
+    }
+    else if(budget > 0 && budget < 10000){
+        cout<<"Keep saving!"<<endl;
+    }
+    else if(budget >= 10000 && budget < 150000){
+        cout<<"Congratulations"<<endl;
+        if(budget >= 10000 && budget < 20000)
+            cout<<"You can afford an Economic Car = Compact Car"<<endl;
+        else if(budget >= 20000 && budget < 30000)
+            cout<<"You can afford an Economic Car = Mid-size Car"<<endl;
+        else if(budget >= 30000 && budget < 50000)
+            cout<<"You can afford a Standard Car = Sudan"<<endl;
+        else if(budget >= 50000 && budget < 70000)
+            cout<<"You can afford a Standard Car = Luxury Sudan"<<endl;
+        else if(budget >= 70000 && budget < 100000)
+            cout<<"You can afford a Performance-oriented Car = Sports Car"<<endl;
+        else if(budget >= 100000 && budget < 150000)
+            cout<<"You can afford a Performance-oriented Car = Supercar"<<endl;   
+    }
+    else if(budget > 150000){
+        cout<<"Congratulations"<<endl;
+        cout<<"You can afford High-end luxury cars = Maserati or Rolls-Royce?"<<endl;   
+    }
 
     return 0;
 }
