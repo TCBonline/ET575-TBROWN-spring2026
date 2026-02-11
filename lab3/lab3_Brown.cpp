@@ -6,6 +6,7 @@ lab 3, numerical variables
 
 #include<iostream>
 
+
 using namespace std;
 
 int main(){
