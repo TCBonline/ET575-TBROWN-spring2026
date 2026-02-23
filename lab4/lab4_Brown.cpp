@@ -100,19 +100,6 @@ int main(){
     cout<<"Remove end characters: "<<word<<endl;
     // Original word = Str-- $ --berry
     // Remove end characters: Str-- $ --be
-
-
-
-
-
-
-
-
-
-
-
-
-
     
     return 0;
 }
