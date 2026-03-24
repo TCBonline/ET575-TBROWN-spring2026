@@ -57,7 +57,10 @@ int validatepositive(){
 
 // function 2: function to calculate and return
 int arearectangle(int length, int width){
-    return length*width;
+    return length * width;
 }
 
 // function 3: print results
+void printarea(int length, int width, int area){
+    cout<<"The area of a rectangle with "<<length<<" and "<<width<<" is "<<area<<endl;
+}

@@ -29,6 +29,7 @@ int main(){
     cout<<checknumber(5)<<endl;
 
     cout<<"\n----- example 5: function composition -----"<<endl;
+    // testing
     // int num = validatepositive();
     // cout<<num;
 
@@ -36,7 +37,8 @@ int main(){
     int width = validatepositive();
 
     int area_rec = arearectangle(length, width);
-    cout<<area_rec;
+
+    printarea(length, width, area_rec);
 
 
     return 0;
