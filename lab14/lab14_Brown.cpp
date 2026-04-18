@@ -34,6 +34,6 @@ int main(){
     int numY2 = collectnumber();
     float d = distance(numX1, numY1, numX2, numY2);
     print_dist(numX1, numY1, numX2, numY2, d);
-
+    
     return 0;
 }
