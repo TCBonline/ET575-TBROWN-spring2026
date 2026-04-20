@@ -10,7 +10,7 @@ lab 15, random numbers
 using namespace std;
 
 int main(){
-    cout<<"\n----- Example 1: pointer and reference -----"<<endl;
+    cout<<"----- Example 1: pointer and reference -----"<<endl;
     pointerreference();
 
     cout<<"\n----- Example 2: passing pointer and reference to a function -----"<<endl;
