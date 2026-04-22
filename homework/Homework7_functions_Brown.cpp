@@ -12,10 +12,10 @@ using namespace std;
 
 // EXERCISE
 // function to collect the size of an array 
-int collect_size(){
+// int collect_size(){
     
 
-}
+// }
 
 //function to populate an array 
 void populate_numbers(int *ar, int s){ 
@@ -47,6 +47,7 @@ int array_min(int *ar, int s){
             minvalue = ar[index2];
         }
     }
+    return minvalue;
 } 
 
  
@@ -57,9 +58,8 @@ float array_avg(int *ar, int s){
     int new_num = 0;
 
     for(int index2 = 0; index2 < s; index2++){
-            new_num += ar[index2];
-                
+            new_num += ar[index2];        
     }
-                return new_num /= s;
+    return new_num /= s;
 
 } 

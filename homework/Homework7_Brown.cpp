@@ -35,7 +35,7 @@ int main(){
     // use loop to ask the user to enter each value of the array
     populate_numbers(a, num);
     print_numbers(a, num); 
-
+    cout<<endl;
     cout << "Minimum number: \t" << array_min(a, num) << endl; 
     cout << "Average of numbers: \t" << array_avg(a, num) << endl; 
 
