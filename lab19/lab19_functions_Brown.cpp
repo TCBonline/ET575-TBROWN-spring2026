@@ -3,9 +3,8 @@ Tristan Brown
 April 22, 2026
 lab 19, 2D arrays
 */
-
 #include <iostream>
-#include <time.h> 
+#include <time.h>
 
 using namespace std;
 
@@ -37,9 +36,8 @@ void printsum(int sumallevenpositive){
 }
 
 // EXERCISE
-/*
-Create a multidimensional, 2D, array with 3 rows and 4 columns and use a function, populate() , to populate each cell of the array with numbers. The numbers will be randomly generated between 0 and 100.
-*/
+// Create a multidimensional, 2D, array with 3 rows and 4 columns and use a function, populate() , to populate each cell of the array with numbers. The numbers will be randomly generated between 0 and 100.
+
 void populate(int arr[][COLSIZE2], int rowsize){
     srand(time(0));
     for(int row = 0; row < rowsize; row++){
