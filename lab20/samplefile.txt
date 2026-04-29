@@ -22,3 +22,8 @@ GAME OVERTristan Brown
 1
 0
 GAME OVER Tristan Brown
+3
+2
+1
+0
+GAME OVER Tristan Brown

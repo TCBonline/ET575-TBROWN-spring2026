@@ -17,7 +17,7 @@ using namespace std;
 int arraysize(){
     int size;
     do{
-        cout<<"Enter the size of the array (between 1 and 100): ";
+        cout<<"Enter an array size between 1 and 100: ";
         cin>>size;
         if(size < 1 || size > 100){
             cout<<"Invalid input. Please enter a number between 1 and 100."<<endl;
@@ -33,7 +33,7 @@ int arraysize(){
 void randPopulate(int arr[], int size){
     srand(time(0));
     for(int i = 0; i < size; i++){
-        arr[i] = 1 + rand()%30;
+        arr[i] = 10 + rand()%21;
     }
 }
 

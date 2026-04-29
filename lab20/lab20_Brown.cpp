@@ -3,7 +3,6 @@ Tristan Brown
 April 27, 2026
 lab 20, parsing and file handeling
 */
-
 #include <iostream>
 #include "lab20_functions_Brown.cpp"
 
@@ -23,6 +22,20 @@ int main(){
     cout<<"\n----- Example 4: append data -----"<<endl;
     appendmsg("samplefile.txt", "Tristan Brown");
 
+    cout<<"\n----- EXERCISE -----"<<endl;
+    createfile("data_user.txt");
+
+    string first, last;
+    cout<<"\nEnter your first name: ";
+    cin>>first;
+    cout<<"Enter your last name: ";
+    cin>>last;
+
+    first.append(" ");
+    first.append(last);
+    append_newmsg("data_user.txt", first);
+
+    read_newfile("data_user.txt");
 
     return 0;
 }

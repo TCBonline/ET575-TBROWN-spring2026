@@ -3,7 +3,6 @@ Tristan Brown
 April 27, 2026
 lab 20, parsing and file handeling
 */
-
 #include <iostream>
 
 using namespace std;
@@ -81,5 +80,37 @@ void appendmsg(string fileame, string msg){
     fout<<"GAME OVER "<<msg<<endl;
 
     fout.close();
+}
 
+// EXERCISE
+// define three functions:
+// a function to create a file named 'data_user.txt'. The program should write the following line in the text file:
+    // “This is my output file – Type your full name.\n”
+void createfile(string filename){
+    ofstream fout;
+    fout.open(filename);
+    fout<<"This is my output file - Type your full name."<<endl;
+    fout.close();
+}
+
+// a function to append a new message to the file name 'data_user.txt'. The new message is passed to the function as an argument.
+void append_newmsg(string fileame, string msg){
+    ofstream fout;
+    fout.open(fileame, ios::app);
+    fout<<msg<<endl;
+    fout.close();
+}
+
+// a function to read a file. The file name should be passed to the function as an argument.
+void read_newfile(string fileame){
+    ifstream fin;
+    string line;
+    int linecounter = 1;
+    fin.open("data_user.txt");
+
+    while(getline(fin, line)){
+        cout<<line<<endl;
+        linecounter++;
+    }
+    fin.close();
 }
