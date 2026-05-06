@@ -41,7 +41,6 @@ int series(int m)
 
 // exercise 4
 void printvalue(string v){
-    
     cout<<"Pass value = "<<v<<endl;
 }
 void passref(string& v){

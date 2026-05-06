@@ -114,3 +114,25 @@ void read_newfile(string fileame){
     }
     fin.close();
 }
+
+// April 29, 2026
+// example 5: check if a file exists, if it exists
+void checkfile(string filename){
+    ifstream fin;
+    fin.open(filename);
+
+    // if the file name doesn't exist in the root directory
+    if(fin.fail()){
+        cout<<"File "<<filename<<" doesn't exist!"<<endl;
+        exit(1);
+    }
+
+    // while filename exists, then read all the lines
+    string eachline;
+    while(getline(fin, eachline)){
+        cout<<"Line 1 = "<<eachline<<endl;
+    }
+
+    // close the file;
+    fin.close();
+}

@@ -37,5 +37,9 @@ int main(){
 
     read_newfile("data_user.txt");
 
+    cout<<"\n----- Example 5: check if file exists -----"<<endl;
+
+    checkfile("samplefile.txt");
+
     return 0;
 }

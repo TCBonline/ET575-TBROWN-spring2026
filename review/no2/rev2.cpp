@@ -1,10 +1,9 @@
 #include<iostream>
-
 #include "rev2_functions.cpp"
 
 int main(){
     srand(time(0));
-        cout<<"----- exercise 1 -----"<<endl;
+    cout<<"----- exercise 1 -----"<<endl;
     char m = mystery(-3, 1);
     cout<<"mystery returns = "<<m<<endl;
 
