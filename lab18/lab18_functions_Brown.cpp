@@ -53,9 +53,9 @@ int search(int *arr, int numberuserindex, int target){
     }
 
     if(found)
-            return index;
-                else
-                        return -1;
+        return index;
+    else
+        return -1;
 }
 
 // EXERCISE
